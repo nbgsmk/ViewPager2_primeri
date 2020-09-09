@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Dev_android\\_Razni_primeri\\ViewPager2_PRIMERI\\VP3_transformacije\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\Dev_android\\_Razni_primeri\\ViewPager2_PRIMERI\\VP3_transformacije\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Dev_android\\_Razni_primeri\\ViewPager2_PRIMERI\\VP3_transformacije\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fragment_view_pager.xml",
+        "source": "D:\\Dev_android\\_Razni_primeri\\ViewPager2_PRIMERI\\VP3_transformacije\\src\\main\\res\\layout\\activity_fragment_view_pager.xml"
+    }
+]
