@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-public class CardFragment extends Fragment {
+public class NekakavFragment extends Fragment {
 	private static final String ARG_COUNT = "param1";
 	private Integer counter;
 	private int[] COLOR_MAP = {
@@ -19,11 +19,11 @@ public class CardFragment extends Fragment {
 			R.color.blue_300, R.color.blue_500, R.color.blue_700, R.color.green_100, R.color.green_300,
 			R.color.green_500, R.color.green_700
 	};
-	public CardFragment() {
+	public NekakavFragment() {
 		// Required empty public constructor
 	}
-	public static CardFragment newInstance(Integer counter) {
-		CardFragment fragment = new CardFragment();
+	public static NekakavFragment newInstance(Integer counter) {
+		NekakavFragment fragment = new NekakavFragment();
 		Bundle args = new Bundle();
 		args.putInt(ARG_COUNT, counter);
 		fragment.setArguments(args);

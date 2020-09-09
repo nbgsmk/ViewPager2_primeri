@@ -1,4 +1,4 @@
-package cc.kostic.dva.ui.main2;
+package cc.kostic.dva;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -11,8 +11,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import cc.kostic.dva.R;
 
 public class Main2Fragment extends Fragment {
 

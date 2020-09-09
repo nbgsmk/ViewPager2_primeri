@@ -1,4 +1,4 @@
-package cc.kostic.dva.ui.main2;
+package cc.kostic.dva;
 
 import androidx.lifecycle.ViewModel;
 

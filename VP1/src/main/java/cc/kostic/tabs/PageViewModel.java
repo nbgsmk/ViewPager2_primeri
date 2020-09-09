@@ -1,4 +1,4 @@
-package cc.kostic.tabs.ui.main;
+package cc.kostic.tabs;
 
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;
