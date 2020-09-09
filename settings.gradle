@@ -1,2 +1,3 @@
+include ':VP3_transformacije'
 include ':VP2'
 include ':VP1'
