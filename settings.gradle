@@ -1,3 +1,2 @@
-include ':dva'
-include ':app'
-rootProject.name = "tabs"
+include ':vp_2'
+include ':vp_1'
