@@ -15,7 +15,7 @@ public class Main1 extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.main1);
 		ViewPager2 viewPager = findViewById(R.id.view_pager);
 //		viewPager.setAdapter(sectionsPagerAdapter);
 
