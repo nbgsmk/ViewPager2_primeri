@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class VpAdapter extends FragmentStateAdapter {
-	private static final int CARD_ITEM_SIZE = 10;
+	private static final int CARD_ITEM_SIZE = 5;
 
 	public VpAdapter(@NonNull FragmentActivity fragmentActivity) {
 		super(fragmentActivity);
