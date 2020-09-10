@@ -22,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
 		TabLayout tabs = findViewById(R.id.tabs);
 //		tabs.setupWithViewPager(viewPager);
 
-		viewPager.setAdapter(createCardAdapter());
+		VpAdapter adapter = new VpAdapter(this, "patka");
+		viewPager.setAdapter(adapter);
+
 		new TabLayoutMediator(tabs, viewPager,
 				new TabLayoutMediator.TabConfigurationStrategy() {
 					@Override public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
@@ -32,8 +34,5 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 
-	private SectionsPagerAdapter createCardAdapter() {
-		SectionsPagerAdapter adapter = new SectionsPagerAdapter(this);
-		return adapter;
-	}
+
 }

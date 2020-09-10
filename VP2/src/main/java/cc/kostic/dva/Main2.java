@@ -19,23 +19,20 @@ public class Main2 extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main2);
 		if ( savedInstanceState == null ) {
-
 		}
-
 
 		ViewPager2 viewPager = findViewById(R.id.view_pager);
 		tabLayout = findViewById(R.id.tabs);
 
+		VpAdapter adapter = new VpAdapter(this);
+		viewPager.setAdapter(adapter);
 
-		viewPager.setAdapter(createCardAdapter());
 		new TabLayoutMediator(tabLayout, viewPager, new TabLayoutMediator.TabConfigurationStrategy() {
 			@Override public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
 				tab.setText("Tab " + (position + 1));
 			}
 		}).attach();
 	}
-	private ViewPagerAdapter createCardAdapter() {
-		ViewPagerAdapter adapter = new ViewPagerAdapter(this);
-		return adapter;
-	}
+
+
 }

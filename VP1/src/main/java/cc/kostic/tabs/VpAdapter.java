@@ -5,20 +5,20 @@ import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
-import cc.kostic.tabs.PlaceholderFragment;
-import cc.kostic.tabs.R;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-public class SectionsPagerAdapter extends FragmentStateAdapter {
+public class VpAdapter extends FragmentStateAdapter {
 
 	@StringRes
 	private static final int[] TAB_TITLES = new int[] {R.string.tab_text_1, R.string.tab_text_2};
+	private String patka;
 
-	public SectionsPagerAdapter(FragmentActivity fm) {
-		super(fm);
+	public VpAdapter(FragmentActivity fa, String patka) {
+		super(fa);
+		this.patka = patka;
 	}
 
 
@@ -26,8 +26,8 @@ public class SectionsPagerAdapter extends FragmentStateAdapter {
 	@Override
 	public Fragment createFragment(int position) {
 		// getItem is called to instantiate the fragment for the given page.
-		// Return a PlaceholderFragment (defined as a static inner class below).
-		return PlaceholderFragment.newInstance(position + 1);
+		// Return a PageFragment (defined as a static inner class below).
+		return PageFragment.newInstance(position + 1, patka);
 	}
 
 /*

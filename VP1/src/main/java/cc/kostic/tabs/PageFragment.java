@@ -15,16 +15,18 @@ import androidx.lifecycle.ViewModelProviders;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class PlaceholderFragment extends Fragment {
+public class PageFragment extends Fragment {
 
 	private static final String ARG_SECTION_NUMBER = "section_number";
+	private static final String ARG_PATKA = "patka";
 
 	private PageViewModel pageViewModel;
 
-	public static PlaceholderFragment newInstance(int index) {
-		PlaceholderFragment fragment = new PlaceholderFragment();
+	public static PageFragment newInstance(int index, String patka) {
+		PageFragment fragment = new PageFragment();
 		Bundle bundle = new Bundle();
 		bundle.putInt(ARG_SECTION_NUMBER, index);
+		bundle.putString(ARG_PATKA, patka);
 		fragment.setArguments(bundle);
 		return fragment;
 	}
@@ -38,13 +40,15 @@ public class PlaceholderFragment extends Fragment {
 			index = getArguments().getInt(ARG_SECTION_NUMBER);
 		}
 		pageViewModel.setIndex(index);
+		pageViewModel.setujTxt(getArguments().getString(ARG_PATKA));
+
 	}
 
 	@Override
 	public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View root = inflater.inflate(R.layout.fragment_main, container, false);
 		final TextView textView = root.findViewById(R.id.section_label);
-		pageViewModel.getText().observe(this, new Observer<String>() {
+		pageViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
 			@Override
 			public void onChanged(@Nullable String s) {
 				textView.setText(s);
