@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.viewpager2.widget.ViewPager2;
 
-public class MainActivity extends AppCompatActivity {
+public class Main1 extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
